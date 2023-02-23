@@ -1,0 +1,160 @@
+/*barra de navegação*/
+ /*inicio de toda a nimação da caixa de notificcação*/
+
+.card{
+	margin-bottom:100px;
+}
+body{background-color:#dedede; margin:0px; border:none; font-family:arial}
+
+
+#nav{
+	list-style:none;
+	margin: 0px;
+	padding: 0px; 
+	margin-top:0px; 
+	float:right;
+	z-index: 100;
+}
+	#nav li {
+		align-items:right;
+		float: right;
+		margin-right: 20px;
+		font-size: 14px;
+		font-weight:bold;
+	}
+	#nav li a{color:#333333;text-decoration:none}
+	#nav li a:hover{color:#006699;text-decoration:none}
+	#notification_li{position:relative}
+	#notificationContainer {
+		border-color: #808080;
+		background-color: #fff;
+		border: 2px solid rgba(100, 100, 100, .4);
+		-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+		overflow: visible;
+		position: absolute;
+		top: 50px;
+		margin-left: -170px;
+		width: 400px;
+		z-index: 1000;
+		display: none;
+	}
+	#notificationContainer:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width:0;
+		height: 0;
+		color: transparent;
+		border: 10px solid black;
+		border-color: transparent transparent white;
+		margin-top: -20px;
+		margin-left: 174px;
+	}
+	#notificationTitle {
+		z-index: 1000;
+		font-weight: bold;
+		padding: 8px;
+		font-size: 13px;
+		background-color: #ffffff;
+		width: 384px;
+		border-bottom: 1px solid #dddddd;
+	}
+	#notificationsBody {
+		padding: 0px 0px 0px 0px !important;
+		height:300px;
+		overflow-y: auto;
+
+	}
+	
+	/*bolinha vermelha que indica o numero de mensagens*/
+	#notification_count {
+		padding: 3px 7px 3px 7px;
+		background: #cc0000;
+		color: #ffffff;
+		font-weight: bold;
+		margin-left:13px;
+		border-radius: 9px;
+		position: absolute;
+		margin-top: -7px;
+		font-size: 11px;
+
+	}
+	/*fim da animação da caixa de pesquisa*/
+/*.card{width:500px;height:600px;}*/
+/*barra de pesquisa da pagina consulta.php*/
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+/*https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png*/
+input[type=search] {
+	background: transparent url(icones/busca.png) no-repeat 9px center;
+	border: solid 1px transparent;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	border-color: #746b0a;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+/* botão-pesquisar extensivo */
+#btn-pesquisa input[type=search] {
+	margin-top: -7px;
+	width: 15px;
+	padding-left:20px;
+	color: transparent;
+	cursor: pointer;
+
+}
+/*sem efeito hover branco
+#btn-pesquisa input[type=search]:hover {
+	background-color: #fff;
+}*/
+#btn-pesquisa input[type=search]:focus {
+	width:60px;
+	padding-left: 40px;
+	color: #000;
+	background-color: #746b0a;
+	cursor: auto;
+	z-index: 1000;
+}
+#btn-pesquisa input:-moz-placeholder {
+	color: #fff;
+}
+#btn-pesquisa input::-webkit-input-placeholder {
+	color: #d3d3d3;
+	padding-left: 15px;
+}
+/*faixa preta no interior da pagina onde fica todas as informaçoes do desenvolvedor*/
